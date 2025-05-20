@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Mind the Gap: Bridging Thought Leap for Improved CoT Tuning</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Mind the Gap: Bridging Thought Leap for Improved CoT Tuning</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="mailto:xuhaolei@zju.edu.cn" target="_blank">Haolei Xu</a><sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  Yuchen Yan<sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:syl@zju.edu.cn" target="_blank">Yongliang Shen</a><sup>1†</sup>,
+                </span>
+                <span class="author-block">
+                  Wenqi Zhang<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Guiyang Hou<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Shengpei Jiang<sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  Kaitao Song<sup>3</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:luwm@zju.edu.cn" target="_blank">Weiming Lu</a><sup>1†</sup>,
+                </span>
+                <span class="author-block">
+                  Jun Xiao<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Yueting Zhuang<sup>1</sup>
+                </span>
+              </div>
+<!--            <div class="is-size-5 publication-authors">-->
+<!--              &lt;!&ndash; Paper authors &ndash;&gt;-->
+<!--              <span class="author-block">-->
+<!--                <a href="xuhaolei@zju.edu.cn" target="_blank">Haolei Xu</a><sup>1*</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a>Yuchen Yan</a><sup>1*</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a href="syl@zju.edu.cn" target="_blank">Yongliang Shen</a><sup>1†</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a>Wenqi Zhang</a><sup>1</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a>Guiyang Hou</a><sup>1</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a>Shengpei Jiang</a><sup>2</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a>Kaitao Song</a><sup>3</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a href="luwm@zju.edu.cn" target="_blank">Weiming Lu</a><sup>1†</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a>Jun Xiao</a><sup>1</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a>Yueting Zhuang</a><sup>1</sup>-->
+<!--                </span>-->
+<!--              </div>-->
+
+
+
+
+<!--              <span class="author-block">-->
+<!--                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>-->
+<!--                  <span class="author-block">-->
+<!--                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>-->
+<!--                  </span>-->
+<!--                  </div>-->
+
+<!--                  <div class="is-size-5 publication-authors">-->
+<!--                    <span class="author-block">Institution Name<br>Conferance name and year</span>-->
+<!--                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
+<!--                  </div>-->
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Zhejiang University,</span>
+                    <span class="author-block"><sup>2</sup>The Chinese University of Hong Kong,</span>
+                    <span class="author-block"><sup>3</sup>Microsoft Research Asia</span>
+                    <br>
+                    <span class="author-block">Preprint. Under review.</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Teaser video-->
+<!--<section class="hero teaser">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="hero-body">-->
+<!--      <video poster="" id="tree" autoplay controls muted loop height="100%">-->
+<!--        &lt;!&ndash; Your video here &ndash;&gt;-->
+<!--        <source src="static/videos/banner_video.mp4"-->
+<!--        type="video/mp4">-->
+<!--      </video>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. -->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/abstract.png" alt="Teaser Image for CoT-Bridge Project" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem;">
+      <h2 class="subtitle has-text-centered">
+        Overview of the Thought Leap phenomenon and our bridging approach. (a) Thought Leaps in CoT; (b) Negative impact on training; (c) Bridging leaps improves reasoning performance.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large language models (LLMs) have achieved remarkable progress on mathematical tasks through Chain-of-Thought (CoT) reasoning. However, existing mathematical CoT datasets often suffer from <b>Thought Leaps</b> due to experts omitting intermediate steps, which negatively impacts model learning and generalization. We propose the <b>CoT Thought Leap Bridge Task</b>, which aims to automatically detect leaps and generate missing intermediate reasoning steps to restore the completeness and coherence of CoT. To facilitate this, we constructed a specialized training dataset called <b>ScaleQM+</b>, based on the structured ScaleQuestMath dataset, and trained <b>CoT-Bridge</b> to bridge thought leaps. Through comprehensive experiments on mathematical reasoning benchmarks, we demonstrate that models fine-tuned on bridged datasets consistently outperform those trained on original datasets, with improvements of up to +5.87% on NuminaMath. Our approach effectively enhances distilled data (+3.02%) and provides better starting points for reinforcement learning (+3.1%), functioning as a plug-and-play module compatible with existing optimization techniques. Furthermore, CoT-Bridge demonstrate improved generalization to out-of-domain logical reasoning tasks, confirming that enhancing reasoning completeness yields broadly applicable benefits.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="hero is small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Method</h2>
+      <p>
+        To address Thought Leaps in Chain-of-Thought reasoning, we first construct training data (ScaleQM+) by removing steps from complete reasoning chains. Subsequently, the CoT-Bridge model, trained on this data, intelligently identifies and generates these missing intermediate steps. This process repairs incomplete reasoning chains, thereby enhancing the quality of CoT data and improving the model's learning efficiency.
+      </p>
+      <img src="static/images/method.png" alt="Illustration of CoT-Bridge method" style="width: 100%; max-height: 600px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem;">
+      <p>
+        Illustration of our work. The left panel shows data construction for training, where we strategically remove intermediate steps (e.g., between Step 0 and Step 1, or Step 2 and Step 3) from complete reasoning chains in ScaleQuestMath to create ScaleQM+ with Thought Leaps. The right panel demonstrates inference, where CoT-Bridge identifies gaps and generates appropriate intermediate steps to restore coherence in reasoning.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Results</h2>
+      <p>
+        To evaluate the effectiveness of CoT-Bridge, we conducted Supervised Fine-Tuning (SFT) experiments on prominent LLMs (Llama3.1-8B, Qwen2.5-Math-1.5B) using datasets including MetaMathQA and NuminaMath. Models trained with data enhanced by CoT-Bridge demonstrated significant performance improvements across various mathematical benchmarks (e.g., up to +5.87% on NuminaMath). This validates the efficacy of bridging thought leaps in enhancing reasoning capabilities.
+      </p>
+      <img src="static/images/main-result.png" alt="Main experimental results of CoT-Bridge" style="width: 100%; max-height: 800px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem;">
+      <p>
+        Main results (%) on mathematical benchmarks. MATH, GaoKao, Odyssey, and Olympiad correspond to the MATH500, GaoKao2023EN, MathOdyssey, and OlympiadBenchEN benchmarks, respectively. QwenBridger-S and QwenBridger-L represent zero-shot bridging based on Qwen2.5-Instruct-7B and Qwen2.5-Instruct-72B, respectively. CoT-Bridge-R stands for CoT-Bridge-Random.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Image carousel-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Plug-and-Play Integration</h2>
+          <img src="static/images/distill.png" alt="MY ALT TEXT" style="max-width: 80%;"/>
+          <h2 class="subtitle has-text-centered">
+            Enhancing distilled data: Model performance after bridging distilled and rejection-sampled data.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Plug-and-Play Integration</h2>
+          <img src="static/images/rl-train.png" alt="Reinforcement Learning Training Curve" style="margin-bottom: 0.5rem; max-width: 40%;"/>
+          <h2 class="subtitle has-text-centered">
+            Better cold start SFT model for RL: Model accuracy over GRPO training steps on MATH500.
+          </h2>
+        </div>
+
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Plug-and-Play Integration</h2>
+          <img src="static/images/rl.png" alt="Reinforcement Learning Results" style="max-width: 80%;"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Better cold start SFT model for RL: Reinforcement learning results.
+          </h2>
+        </div>
+
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Thought Leap Bridge Task Evaluation</h2>
+          <img src="static/images/task.png" alt="MY ALT TEXT" style="max-width: 50%;"/>
+          <h2 class="subtitle has-text-centered" style="max-width: 60%;">
+            Performance of different bridging methods on ScaleQM+ test set. Pre stands for Precision, Rec stands for Recall and Red stands for Redundancy.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">OOD Evaluation</h2>
+          <img src="static/images/ood.png" alt="MY ALT TEXT" style="max-width: 60%;"/>
+          <h2 class="subtitle has-text-centered">
+            Performance of NuminaMath and its bridged version on logical reasoning benchmarks.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Bridging Positions</h2>
+          <img src="static/images/pos.png" alt="MY ALT TEXT" style="max-width: 70%;"/>
+          <h2 class="subtitle has-text-centered">
+            Performance variation after removing each bridging component.
+          </h2>
+        </div>
+
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">PRM Score Distribution</h2>
+          <img src="static/images/prm-num.png" alt="Reinforcement Learning Training Curve" style="margin-bottom: 0.5rem; max-width: 70%;"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            PRM scores of Qwen2.5-Instruct-7B/72B & CoT-Bridge for MetaMathQA and NuminaMath.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">PRM Score Distribution</h2>
+          <img src="static/images/prm-num-vis.png" alt="Reinforcement Learning Results" style="max-width: 65%;"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            PRM scores of Qwen2.5-Instruct-7B/72B & CoT-Bridge for MetaMathQA and NuminaMath.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Noise Impact Analysis</h2>
+          <img src="static/images/prm.png" alt="MY ALT TEXT" style="max-width: 65%;"/>
+          <h2 class="subtitle has-text-centered">
+            Performance after removing low-scoring steps.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">DeepSeek R1 score</h2>
+          <img src="static/images/rm.png" alt="MY ALT TEXT" style="max-width: 40%;"/>
+          <h2 class="subtitle has-text-centered">
+            DeepSeek R1 scoring results for the original CoT and the bridged CoT.
+          </h2>
+        </div>
+
+
+
+  </div>
+</div>
+</div>
+</section>
+
+<!-- End image carousel -->
+
+
+
+
+<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <h2 class="title is-3">Video Presentation</h2>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-four-fifths">-->
+<!--          -->
+<!--          <div class="publication-video">-->
+<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
+
+
+<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title is-3">Another Carousel</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-video1">-->
+<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel1.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video2">-->
+<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel2.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video3">-->
+<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel3.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
+
+
+
+
+
+
+<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
